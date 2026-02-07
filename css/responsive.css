@@ -1,0 +1,363 @@
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* === LARGE DESKTOP === */
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .celebration-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* === TABLET / SMALL DESKTOP === */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .celebration-title {
+        font-size: 3rem;
+    }
+
+    .percentage-display {
+        font-size: 6rem;
+    }
+
+    .roses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* === TABLET PORTRAIT === */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 32px 24px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .gif-container img {
+        max-width: 250px;
+    }
+
+    .celebration-title {
+        font-size: 2.5rem;
+    }
+
+    .celebration-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .celebration-gif img {
+        max-width: 300px;
+    }
+
+    .percentage-display {
+        font-size: 5rem;
+    }
+
+    .letter-container {
+        padding: 48px 32px;
+        margin: 24px auto;
+    }
+
+    .letter-text {
+        font-size: 1.1rem;
+    }
+
+    .signature {
+        font-size: 1.5rem;
+    }
+}
+
+/* === MOBILE LANDSCAPE / LARGE MOBILE === */
+@media (max-width: 640px) {
+    .roses-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .garden-title {
+        font-size: 2rem;
+    }
+
+    .rose-svg {
+        width: 100px;
+        height: 150px;
+    }
+}
+
+/* === MOBILE PORTRAIT === */
+@media (max-width: 480px) {
+    :root {
+        --spacing-xl: 32px;
+        --spacing-xxl: 48px;
+    }
+
+    .page-section {
+        padding: 16px;
+    }
+
+    .glass-card {
+        padding: 24px 16px;
+        margin: 12px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .main-question {
+        margin: 16px 0;
+    }
+
+    .gif-container img {
+        max-width: 200px;
+    }
+
+    .response-message {
+        font-size: 1.2rem;
+    }
+
+    /* Stack buttons vertically on small screens */
+    .button-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .btn {
+        width: 100% !important;
+        min-height: 48px;
+        font-size: 1.1rem;
+        padding: 14px 32px;
+    }
+
+    /* Celebration */
+    .celebration-title {
+        font-size: 2rem;
+    }
+
+    .celebration-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .celebration-gif img {
+        max-width: 250px;
+    }
+
+    .romantic-quote {
+        font-size: 1.2rem;
+    }
+
+    /* Love Meter */
+    .percentage-display {
+        font-size: 4rem;
+    }
+
+    .love-meter-instruction {
+        font-size: 1rem;
+    }
+
+    #love-message h3 {
+        font-size: 1.5rem;
+    }
+
+    #love-message p {
+        font-size: 1.1rem;
+    }
+
+    /* Letter */
+    .letter-container {
+        padding: 32px 20px;
+        margin: 16px auto;
+        background-size: 100% 1.2em;
+    }
+
+    .letter-text {
+        font-size: 1rem;
+    }
+
+    .love-reasons li {
+        font-size: 1rem;
+    }
+
+    .signature {
+        font-size: 1.3rem;
+    }
+
+    /* Photos */
+    .photos-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* === SMALL MOBILE (iPhone SE) === */
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .glass-card {
+        padding: 20px 12px;
+    }
+
+    .gif-container img {
+        max-width: 180px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 12px 24px;
+    }
+
+    .celebration-title {
+        font-size: 1.75rem;
+    }
+
+    .percentage-display {
+        font-size: 3rem;
+    }
+
+    .letter-text {
+        font-size: 0.95rem;
+    }
+}
+
+/* === TOUCH DEVICE ADJUSTMENTS === */
+@media (hover: none) and (pointer: coarse) {
+
+    /* Remove hover effects on touch devices */
+    .btn:hover {
+        transform: none;
+    }
+
+    .rose-item:hover {
+        transform: none;
+    }
+
+    .polaroid:hover {
+        transform: none;
+    }
+
+    /* Use active states instead */
+    .btn:active {
+        transform: scale(0.95);
+    }
+
+    .rose-item:active {
+        transform: scale(1.05);
+    }
+
+    /* Disable No button movement on touch devices */
+    #no-btn {
+        position: relative !important;
+    }
+}
+
+/* === LANDSCAPE ORIENTATION === */
+@media (max-height: 600px) and (orientation: landscape) {
+    .page-section {
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .glass-card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .gif-container {
+        margin: 12px 0;
+    }
+
+    .gif-container img {
+        max-width: 180px;
+    }
+
+    .button-container {
+        margin-top: 16px;
+    }
+
+    .percentage-display {
+        font-size: 3rem;
+        margin: 16px 0;
+    }
+}
+
+/* === ACCESSIBILITY: REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .floating-heart {
+        animation: none;
+    }
+}
+
+/* === PRINT STYLES === */
+@media print {
+    body {
+        background: white;
+    }
+
+    .page-section {
+        page-break-inside: avoid;
+    }
+
+    .btn,
+    .floating-hearts,
+    #confetti-canvas {
+        display: none;
+    }
+
+    .letter-container {
+        box-shadow: none;
+        border: 1px solid #000;
+    }
+}

@@ -1,0 +1,541 @@
+/* ===================================
+   VALENTINE ROSE WEBSITE - MAIN STYLES
+   =================================== */
+
+/* === CSS CUSTOM PROPERTIES === */
+:root {
+    /* Colors */
+    --primary-color: #FF1493;
+    --secondary-color: #FFB6C1;
+    --accent-color: #FF69B4;
+    --white: #FFFFFF;
+    --off-white: #FFF5F7;
+    --red: #DC143C;
+    --purple: #9370DB;
+    --gold: #FFD700;
+
+    /* Gradients */
+    --gradient-bg: linear-gradient(135deg, #FFF5F7 0%, #FFE5E9 100%);
+    --gradient-button: linear-gradient(135deg, #FF1493 0%, #FF69B4 100%);
+    --gradient-card: linear-gradient(135deg, #FFFFFF 0%, #FFF5F7 100%);
+
+    /* Typography */
+    --font-heading: 'Pacifico', cursive;
+    --font-body: 'Poppins', sans-serif;
+    --font-script: 'Dancing Script', cursive;
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 32px;
+    --spacing-xl: 48px;
+    --spacing-xxl: 64px;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-full: 50px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 8px 24px rgba(255, 20, 147, 0.3);
+    --shadow-lg: 0 8px 32px rgba(31, 38, 135, 0.1);
+
+    /* Transitions */
+    --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* === RESET & BASE === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background: var(--gradient-bg);
+    color: #333;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* === UTILITY CLASSES === */
+.hidden {
+    display: none !important;
+}
+
+.active {
+    display: flex !important;
+}
+
+/* === PAGE SECTIONS === */
+.page-section {
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-md);
+    position: relative;
+}
+
+/* === GLASSMORPHISM CARD === */
+.glass-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+/* === TYPOGRAPHY === */
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    margin-bottom: var(--spacing-md);
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+/* === LANDING PAGE === */
+.greeting {
+    animation: slideDown 0.8s ease-out;
+}
+
+.main-question {
+    margin: var(--spacing-lg) 0;
+}
+
+.gif-container {
+    margin: var(--spacing-md) 0;
+}
+
+.gif-container img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.response-message {
+    font-size: 1.5rem;
+    color: var(--purple);
+    margin: var(--spacing-md) 0;
+    font-weight: 600;
+    min-height: 40px;
+}
+
+/* === BUTTONS === */
+.button-container {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+    position: relative;
+    min-height: 100px;
+}
+
+.btn {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 16px 48px;
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-md);
+    position: relative;
+}
+
+.btn-yes {
+    background: var(--gradient-button);
+    color: var(--white);
+    min-width: 150px;
+}
+
+.btn-yes:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(255, 20, 147, 0.4);
+}
+
+.btn-yes:active {
+    transform: translateY(0);
+}
+
+.btn-no {
+    background: #999;
+    color: var(--white);
+    min-width: 150px;
+}
+
+.btn-no:hover {
+    background: #777;
+}
+
+.btn-primary {
+    background: var(--gradient-button);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 12px 32px rgba(255, 20, 147, 0.4);
+}
+
+.btn-secondary {
+    background: var(--gradient-card);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+/* === CELEBRATION SCREEN === */
+#celebration-screen {
+    background: var(--gradient-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+}
+
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.celebration-content {
+    text-align: center;
+    z-index: 1001;
+    position: relative;
+}
+
+.celebration-title {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.celebration-subtitle {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-lg);
+}
+
+.celebration-gif img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: var(--radius-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.romantic-quote {
+    font-family: var(--font-script);
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--purple);
+    margin: var(--spacing-lg) 0;
+    max-width: 500px;
+}
+
+/* === LOVE METER === */
+.love-meter-container {
+    padding: var(--spacing-lg) 0;
+}
+
+.percentage-display {
+    font-size: 8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #FF1493, #FF69B4, #FFD700);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 20, 147, 0.5);
+    margin: var(--spacing-lg) 0;
+    line-height: 1;
+}
+
+.love-meter-instruction {
+    font-size: 1.2rem;
+    color: #666;
+    margin: var(--spacing-md) 0;
+}
+
+.love-meter-result {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius-md);
+}
+
+#love-message h3 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+#love-message p {
+    font-size: 1.5rem;
+}
+
+/* === ROSE GARDEN === */
+#rose-garden-screen {
+    background: linear-gradient(135deg, #FFF8F0 0%, #FFE8E0 100%);
+}
+
+.rose-garden-container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.garden-title {
+    font-size: 3rem;
+    color: var(--red);
+    margin-bottom: var(--spacing-md);
+}
+
+.garden-instruction {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    font-weight: 500;
+    margin-bottom: var(--spacing-xl);
+    font-family: var(--font-body);
+    opacity: 0.9;
+}
+
+
+.roses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin: 0 auto var(--spacing-xl);
+    padding: var(--spacing-lg);
+}
+
+.rose-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform var(--transition-base);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: var(--radius-md);
+    opacity: 0;
+}
+
+.rose-item:hover {
+    transform: scale(1.05);
+}
+
+.rose-svg-container {
+    margin-bottom: var(--spacing-sm);
+}
+
+.rose-svg {
+    width: 120px;
+    height: 180px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.rose-message {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--radius-sm);
+}
+
+.rose-message h4 {
+    color: var(--red);
+    font-family: var(--font-heading);
+    margin-bottom: var(--spacing-xs);
+}
+
+.rose-message p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* === FINAL MESSAGE === */
+#final-message-screen {
+    background: #F5F5F0;
+}
+
+.letter-container {
+    max-width: 800px;
+    margin: var(--spacing-xl) auto;
+    padding: var(--spacing-xxl) var(--spacing-xl);
+    background: #FFFEF7;
+    background-image:
+        linear-gradient(90deg, transparent 79px, #C9E4CA 79px, #C9E4CA 81px, transparent 81px),
+        linear-gradient(#F7F9FA 0.05em, transparent 0.05em);
+    background-size: 100% 1.5em;
+    border: 1px solid #DDD;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1), 0 0 0 20px #FFFEF7;
+    font-family: var(--font-script);
+    line-height: 1.8;
+}
+
+.letter-header h1 {
+    font-family: var(--font-heading);
+    color: var(--red);
+    text-align: center;
+    margin-bottom: var(--spacing-lg);
+}
+
+.letter-text {
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-md);
+    color: #333;
+}
+
+.reasons-container {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md);
+    background: rgba(255, 182, 193, 0.1);
+    border-radius: var(--radius-sm);
+}
+
+.reasons-container h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.love-reasons {
+    list-style: none;
+    padding-left: 0;
+}
+
+.love-reasons li {
+    font-size: 1.2rem;
+    margin: var(--spacing-sm) 0;
+    padding-left: var(--spacing-md);
+    position: relative;
+}
+
+.love-reasons li::before {
+    content: "💕";
+    position: absolute;
+    left: 0;
+}
+
+.letter-signature {
+    text-align: right;
+    margin-top: var(--spacing-xl);
+}
+
+.signature {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--red);
+}
+
+.final-actions {
+    text-align: center;
+    margin-top: var(--spacing-lg);
+}
+
+/* === PHOTO GALLERY === */
+.photo-gallery {
+    margin-top: var(--spacing-xl);
+}
+
+.photo-gallery h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.polaroid {
+    background: white;
+    padding: 16px;
+    padding-bottom: 48px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.polaroid:hover {
+    transform: rotate(5deg) translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.photo-caption {
+    text-align: center;
+    margin-top: 12px;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* === FLOATING HEARTS === */
+.floating-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.floating-heart {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}

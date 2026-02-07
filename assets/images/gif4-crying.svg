@@ -1,0 +1,27 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#E0E8F0"/>
+  <ellipse cx="200" cy="200" rx="80" ry="95" fill="#D4A574"/>
+  <circle cx="140" cy="140" r="35" fill="#D4A574"/>
+  <circle cx="260" cy="140" r="35" fill="#D4A574"/>
+  <ellipse cx="200" cy="220" rx="60" ry="50" fill="#FFCBA4"/>
+  
+  <!-- Very sad eyes -->
+  <line x1="170" y1="190" x2="180" y2="195" stroke="#2C1810" stroke-width="3"/>
+  <line x1="180" y1="190" x2="170" y2="195" stroke="#2C1810" stroke-width="3"/>
+  <line x1="220" y1="190" x2="230" y2="195" stroke="#2C1810" stroke-width="3"/>
+  <line x1="230" y1="190" x2="220" y2="195" stroke="#2C1810" stroke-width="3"/>
+  
+  <!-- Big frown -->
+  <path d="M 165 235 Q 200 225 235 235" stroke="#2C1810" stroke-width="5" fill="none"/>
+  
+  <!-- Multiple tears -->
+  <ellipse cx="235" cy="210" rx="4" ry="10" fill="#4DA6FF"/>
+  <ellipse cx="245" cy="220" rx="3" ry="8" fill="#4DA6FF"/>
+  <ellipse cx="240" cy="235" rx="3" ry="7" fill="#4DA6FF"/>
+  
+  <!-- Broken heart -->
+  <path d="M 340 120 L 350 110 Q 360 100 360 110 Q 360 120 340 135 Q 320 120 320 110 Q 320 100 330 110 Z" fill="#FF69B4"/>
+  <line x1="340" y1="105" x2="340" y2="135" stroke="white" stroke-width="3"/>
+  
+  <text x="200" y="360" font-family="Arial" font-size="20" fill="#4682B4" text-anchor="middle">I'm heartbroken... 💔😭</text>
+</svg>

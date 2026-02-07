@@ -1,0 +1,32 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#D8E9F3"/>
+  <ellipse cx="200" cy="210" rx="80" ry="95" fill="#D4A574"/>
+  <circle cx="140" cy="150" r="35" fill="#D4A574"/>
+  <circle cx="260" cy="150" r="35" fill="#D4A574"/>
+  <ellipse cx="200" cy="230" rx="60" ry="50" fill="#FFCBA4"/>
+  
+  <!-- Heartbroken eyes -->
+  <ellipse cx="175" cy="200" rx="5" ry="9" fill="#2C1810"/>
+  <ellipse cx="225" cy="200" rx="5" ry="9" fill="#2C1810"/>
+  
+  <!-- Very sad eyebrows -->
+  <path d="M 155 180 Q 175 173 195 180" stroke="#2C1810" stroke-width="4" fill="none"/>
+  <path d="M 205 180 Q 225 173 245 180" stroke="#2C1810" stroke-width="4" fill="none"/>
+  
+  <!-- Big frown -->
+  <path d="M 160 240 Q 200 230 240 240" stroke="#2C1810" stroke-width="5" fill="none"/>
+  
+  <!-- Rain clouds above -->
+  <ellipse cx="180" cy="80" rx="30" ry="20" fill="#8CB4D4"/>
+  <ellipse cx="210" cy="75" rx="35" ry="22" fill="#8CB4D4"/>
+  <ellipse cx="240" cy="80" rx="28" ry="20" fill="#8CB4D4"/>
+  
+  <!-- Rain drops -->
+  <line x1="170" y1="95" x2="165" y2="115" stroke="#4DA6FF" stroke-width="2"/>
+  <line x1="190" y1="95" x2="185" y2="115" stroke="#4DA6FF" stroke-width="2"/>
+  <line x1="210" y1="92" x2="205" y2="112" stroke="#4DA6FF" stroke-width="2"/>
+  <line x1="230" y1="95" x2="225" y2="115" stroke="#4DA6FF" stroke-width="2"/>
+  <line x1="250" y1="95" x2="245" y2="115" stroke="#4DA6FF" stroke-width="2"/>
+  
+  <text x="200" y="370" font-family="Arial" font-size="20" fill="#4682B4" text-anchor="middle">My heart can't take this 💔</text>
+</svg>

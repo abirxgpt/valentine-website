@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A special Valentine's Day message just for you! 💝">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Will You Be My Valentine? 💝">
+    <meta property="og:description" content="I have something special to ask you...">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <title>Will You Be My Valentine? 💝</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- Landing Page -->
+    <section id="landing-page" class="page-section active">
+        <div class="floating-hearts" id="floating-hearts"></div>
+        <div class="glass-card">
+            <h1 class="greeting">Hey <span id="girlfriend-name">Beautiful</span>! 💖</h1>
+            <div class="gif-container">
+                <img id="main-gif" src="assets/images/gif1-happy.gif" alt="Cute animation"
+                    onerror="this.style.display='none'">
+            </div>
+            <h2 class="main-question">Will you be my Valentine?</h2>
+            <p id="response-message" class="response-message hidden"></p>
+            <div class="button-container">
+                <button id="yes-btn" class="btn btn-yes">Yes! 💝</button>
+                <button id="no-btn" class="btn btn-no">No</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Celebration Screen -->
+    <section id="celebration-screen" class="page-section hidden">
+        <canvas id="confetti-canvas"></canvas>
+        <div class="celebration-content">
+            <h1 class="celebration-title">Yay! 🎉💖</h1>
+            <h2 class="celebration-subtitle">I knew you'd say yes!</h2>
+            <div class="celebration-gif">
+                <img src="assets/images/celebration.gif" alt="Celebration" onerror="this.style.display='none'">
+            </div>
+            <p class="romantic-quote">"In all the world, there is no heart for me like yours."</p>
+            <button id="continue-btn" class="btn btn-primary">Continue ❤️</button>
+        </div>
+    </section>
+
+    <!-- Love Meter Screen -->
+    <section id="love-meter-screen" class="page-section hidden">
+        <div class="glass-card">
+            <h2>How much do you love me?</h2>
+            <div class="love-meter-container">
+                <div class="percentage-display">
+                    <span id="love-percentage">0</span><span class="percent-sign">%</span>
+                </div>
+                <p class="love-meter-instruction">Click stop when you feel it's right!</p>
+                <button id="stop-btn" class="btn btn-primary">Stop! ❤️</button>
+            </div>
+            <div id="love-meter-result" class="love-meter-result hidden">
+                <div id="love-message"></div>
+                <button id="next-roses-btn" class="btn btn-secondary">See Something Special 🌹</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rose Garden Screen -->
+    <section id="rose-garden-screen" class="page-section hidden">
+        <div class="rose-garden-container">
+            <h2 class="garden-title">A Garden of Memories 🌹</h2>
+            <p class="garden-instruction">Click on each rose to reveal a special message 💕</p>
+            <div id="roses-container" class="roses-grid"></div>
+            <button id="final-message-btn" class="btn btn-primary hidden">See My Message 💌</button>
+        </div>
+    </section>
+
+    <!-- Final Message Screen -->
+    <section id="final-message-screen" class="page-section hidden">
+        <div class="letter-container">
+            <div class="letter-header">
+                <h1>To My Dearest <span id="final-name">Love</span> 💝</h1>
+            </div>
+
+            <div class="letter-body">
+                <p class="letter-text" id="letter-opening">
+                    I've been wanting to tell you this for a while now... Every time I see you,
+                    my heart does this little flutter thing that I can't quite explain. Your smile
+                    genuinely brightens my day, and I find myself looking forward to any chance to talk to you.
+                </p>
+
+                <p class="letter-text" id="letter-body-text">
+                    I know this might seem sudden, but I've been gathering the courage to ask you this
+                    for some time. You're someone truly special, and I'd love the chance to get to know
+                    you better. Whether it's grabbing coffee, going on an adventure, or just hanging out,
+                    I promise to make you smile.
+                </p>
+
+                <div class="reasons-container">
+                    <h3>Here's what I admire about you:</h3>
+                    <ul class="love-reasons" id="love-reasons-list">
+                        <!-- Populated from config -->
+                    </ul>
+                </div>
+
+                <p class="letter-text" id="letter-closing">
+                    So... will you give me a chance? This Valentine's Day could be the start of
+                    something really amazing. No pressure, but I really hope you'll say yes. 💕
+                </p>
+
+                <p class="letter-signature">
+                    Forever yours,<br>
+                    <span class="signature" id="your-name-signature">Me</span> ❤️
+                </p>
+            </div>
+
+            <!-- Optional Photo Gallery -->
+            <div class="photo-gallery hidden" id="photo-gallery">
+                <h3>Our Memories Together 📸</h3>
+                <div class="photos-grid" id="photos-grid">
+                    <!-- Photos populated from config -->
+                </div>
+            </div>
+
+            <div class="final-actions">
+                <button id="share-btn" class="btn btn-primary">Share 📤</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music (Optional) -->
+    <audio id="background-music" loop>
+        <source src="assets/audio/romantic-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- JavaScript Files -->
+    <script src="js/config.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

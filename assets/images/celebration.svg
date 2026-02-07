@@ -1,0 +1,51 @@
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGradient">
+      <stop offset="0%" stop-color="#FFE5E9"/>
+      <stop offset="100%" stop-color="#FFB6C1"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="500" height="500" fill="url(#bgGradient)"/>
+  
+  <!-- Confetti pieces -->
+  <rect x="50" y="80" width="15" height="15" fill="#FF1493" transform="rotate(25 57 87)"/>
+  <rect x="420" y="120" width="12" height="12" fill="#FFD700" transform="rotate(-30 426 126)"/>
+  <circle cx="150" cy="150" r="8" fill="#FF69B4"/>
+  <rect x="350" y="90" width="18" height="18" fill="#FF1493" transform="rotate(45 359 99)"/>
+  <circle cx="80" cy="200" r="10" fill="#FFD700"/>
+  <rect x="450" y="250" width="14" height="14" fill="#FF69B4" transform="rotate(60 457 257)"/>
+  <circle cx="200" cy="100" r="7" fill="#FF1493"/>
+  <rect x="320" y="180" width="16" height="16" fill="#FFD700" transform="rotate(-45 328 188)"/>
+  
+  <!-- Large hearts -->
+  <path d="M 250 200 L 270 180 Q 290 160 290 180 Q 290 200 250 235 Q 210 200 210 180 Q 210 160 230 180 Z" fill="#FF1493"/>
+  <path d="M 150 300 L 165 287 Q 177 275 177 287 Q 177 300 150 325 Q 123 300 123 287 Q 123 275 135 287 Z" fill="#FF69B4"/>
+  <path d="M 380 320 L 395 307 Q 407 295 407 307 Q 407 320 380 345 Q 353 320 353 307 Q 353 295 365 307 Z" fill="#FF1493"/>
+  
+  <!-- Happy bear celebrating -->
+  <ellipse cx="250" cy="300" rx="70" ry="80" fill="#D4A574"/>
+  <circle cx="200" cy="250" r="30" fill="#D4A574"/>
+  <circle cx="300" cy="250" r="30" fill="#D4A574"/>
+  <ellipse cx="250" cy="320" rx="55" ry="45" fill="#FFCBA4"/>
+  
+  <!-- Very happy eyes -->
+  <circle cx="230" cy="300" r="5" fill="#2C1810"/>
+  <circle cx="270" cy="300" r="5" fill="#2C1810"/>
+  
+  <!-- Big smile -->
+  <path d="M 215 330 Q 250 350 285 330" stroke="#2C1810" stroke-width="5" fill="none" stroke-linecap="round"/>
+  
+  <!-- Blush -->
+  <ellipse cx="210" cy="320" rx="18" ry="12" fill="#FFB6C1" opacity="0.7"/>
+  <ellipse cx="290" cy="320" rx="18" ry="12" fill="#FFB6C1" opacity="0.7"/>
+  
+  <!-- Stars -->
+  <text x="100" y="100" font-size="40">⭐</text>
+  <text x="400" y="180" font-size="35">✨</text>
+  <text x="120" y="380" font-size="38">⭐</text>
+  <text x="410" y="420" font-size="36">✨</text>
+  
+  <!-- Text -->
+  <text x="250" y="460" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#FF1493" text-anchor="middle">YES! 🎉💕</text>
+</svg>

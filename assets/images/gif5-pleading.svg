@@ -1,0 +1,25 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#FFF0F5"/>
+  <ellipse cx="200" cy="200" rx="80" ry="90" fill="#D4A574"/>
+  <circle cx="140" cy="140" r="35" fill="#D4A574"/>
+  <circle cx="260" cy="140" r="35" fill="#D4A574"/>
+  <ellipse cx="200" cy="220" rx="60" ry="50" fill="#FFCBA4"/>
+  
+  <!-- Puppy dog eyes - BIG -->
+  <circle cx="175" cy="190" r="15" fill="#2C1810"/>
+  <circle cx="225" cy="190" r="15" fill="#2C1810"/>
+  <circle cx="178" cy="187" r="6" fill="white"/>
+  <circle cx="228" cy="187" r="6" fill="white"/>
+  
+  <!-- Pleading eyebrows -->
+  <path d="M 155 170 Q 175 163 195 170" stroke="#2C1810" stroke-width="3" fill="none"/>
+  <path d="M 205 170 Q 225 163 245 170" stroke="#2C1810" stroke-width="3" fill="none"/>
+  
+  <!-- Slight smile -->
+  <path d="M 175 230 Q 200 235 225 230" stroke="#2C1810" stroke-width="3" fill="none"/>
+  
+  <!-- Praying hands -->
+  <text x="80" y="200" font-size="50">🙏</text>
+  
+  <text x="200" y="360" font-family="Arial" font-size="22" fill="#FF69B4" text-anchor="middle">Pretty please? 🥺👉👈</text>
+</svg>
