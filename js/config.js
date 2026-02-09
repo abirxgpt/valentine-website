@@ -5,7 +5,7 @@
 
 const CONFIG = {
     // === PERSONALIZATION ===
-    girlfriendName: "Cutu Palak",           // Her name - CHANGE THIS!
+    girlfriendName: "My Cutuuu",           // Her name - CHANGE THIS!
     yourName: "Abir",                    // Your name - CHANGE THIS!
     pageTitle: "Will You Be My Valentine? 💝",  // Browser tab title
 
